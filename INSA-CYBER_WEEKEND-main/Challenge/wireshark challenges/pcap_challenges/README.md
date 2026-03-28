@@ -1,9 +1,3 @@
-Here’s a clean, professional, GitHub-ready full README version of your Wireshark CTF work 🔥
-(you can copy-paste directly into your repo)
-
-
----
-
 📡 Wireshark CTF Writeup — Network Forensics Challenges
 
 🛠 Tools Used
@@ -14,30 +8,22 @@ Base64 decoder (Linux terminal)
 
 xxd (hex decoding tool)
 
+-Overview
 
-
----
-
-🧠 Overview
-
-This project demonstrates how to analyze network traffic using Wireshark and extract hidden flags from different protocols.
+This challenges demonstrates how to analyze network traffic using Wireshark and extract hidden flags from different protocols.
 
 Each challenge is solved by:
 
 > Identifying the protocol → Filtering traffic → Inspecting payload → Extracting hidden data
 
 
-
-
----
-
 🚩 Challenge 1 — HTTP (Unencrypted Traffic)
 
-🧠 Concept
+-Concept
 
 HTTP traffic is not encrypted, meaning all requests and responses are visible in plain text.
 
-🔍 Approach
+- Approach
 
 Filter:
 
@@ -54,7 +40,7 @@ Select Follow → HTTP Stream
 Inspect full request/response
 
 
-🎯 Result
+-Result
 
 Flag is directly visible inside:
 
@@ -65,22 +51,24 @@ POST body
 Server response
 
 
-🧠 Key Learning
+-Key Learning
 
 > HTTP exposes readable data because it has no encryption.
 
+### Follow HTTP Stream Output
 
+![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fl-challenge1.png)
 
+👉 Shows flag inside HTTP response body
 
----
 
 🚩 Challenge 2 — DNS (Data in Domain Names)
 
-🧠 Concept
+-Concept
 
 DNS is used to resolve domain names, but attackers can hide data inside subdomains.
 
-🔍 Approach
+-Approach
 
 Filter:
 
@@ -99,26 +87,25 @@ Example:
 
 FLAG_hidden_data.example.com
 
-🎯 Result
+-Result
 
 Extract hidden string from domain name.
 
-🧠 Key Learning
+-Key Learning
 
 > DNS queries can be used for data exfiltration.
 
+![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge2.png)
 
 
-
----
 
 🚩 Challenge 3 — TCP Stream Reassembly
 
-🧠 Concept
+-Concept
 
 TCP splits data into multiple packets but Wireshark can reconstruct full conversations.
 
-🔍 Approach
+-Approach
 
 Filter:
 
@@ -133,26 +120,24 @@ Right-click → Follow → TCP Stream
 View full reconstructed message
 
 
-🎯 Result
+-Result
 
 Flag appears only after full stream reconstruction.
 
-🧠 Key Learning
+-Key Learning
 
 > TCP stream grouping allows full message recovery from fragmented packets.
 
+![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge3.png)
 
-
-
----
 
 🚩 Challenge 4 — SMTP + Base64 Encoding
 
-🧠 Concept
+-Concept
 
 Email traffic (SMTP) often carries encoded content such as Base64.
 
-🔍 Approach
+-Approach
 
 Filter:
 
@@ -175,23 +160,26 @@ Decode:
 
 echo "RkxBR3tzbXRwX2Jhc2U2NH0=" | base64 -d
 
-🎯 Result
+-Result
 
 FLAG{smtp_base64}
 
-🧠 Key Learning
+-Key Learning
 
 > SMTP messages often hide data using Base64 encoding.
 
+![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge4a.png)
+
+![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge4b.png)
 
 
 🚩 Challenge 5 — ICMP Hidden Data (Ping Payload)
 
-🧠 Concept
+-Concept
 
 ICMP (ping) packets can carry hidden data inside their payload section.
 
-🔍 Approach
+-Approach
 
 Filter:
 
@@ -232,7 +220,7 @@ Key Learning
 
 ### Follow HTTP Stream Output
 
-![HTTP Stream](FL-challenge/fla-challenge5a.png)
+![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge5a.png)
 ### Follow HTTP Stream Output
 
-![HTTP Stream](FL-challenge/fla-challenge5b.png)
+![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fl-challenge5b.png)
