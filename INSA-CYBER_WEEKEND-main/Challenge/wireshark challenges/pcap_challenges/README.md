@@ -59,8 +59,6 @@ Server response
 
 ![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fl-challenge1.png)
 
-👉 Shows flag inside HTTP response body
-
 
 🚩 Challenge 2 — DNS (Data in Domain Names)
 
@@ -218,9 +216,8 @@ Key Learning
 
 > ICMP can be used as a convert channel to transmit hidden data.
 
-### Follow HTTP Stream Output
 
 ![ICMP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge5a.png)
-### Follow HTTP Stream Output
+
 
 ![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fl-challenge5b.png)
