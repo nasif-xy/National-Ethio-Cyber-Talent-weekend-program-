@@ -85,7 +85,7 @@ Identify suspicious subdomains
 
 Example:
 
-FLAG_hidden_data.example.com
+FLAG_dns_exfiltration_.example.com
 
 -Result
 
@@ -95,7 +95,7 @@ Extract hidden string from domain name.
 
 > DNS queries can be used for data exfiltration.
 
-![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge2.png)
+![UDP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge2.png)
 
 
 
@@ -128,7 +128,7 @@ Flag appears only after full stream reconstruction.
 
 > TCP stream grouping allows full message recovery from fragmented packets.
 
-![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge3.png)
+![TCP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge3.png)
 
 
 🚩 Challenge 4 — SMTP + Base64 Encoding
@@ -168,7 +168,7 @@ FLAG{smtp_base64}
 
 > SMTP messages often hide data using Base64 encoding.
 
-![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge4a.png)
+![SMTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge4a.png)
 
 ![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge4b.png)
 
@@ -220,7 +220,7 @@ Key Learning
 
 ### Follow HTTP Stream Output
 
-![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge5a.png)
+![ICMP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fla-challenge5a.png)
 ### Follow HTTP Stream Output
 
 ![HTTP Stream](https://github.com/nasif-xy/National-Ethio-Cyber-Talent-weekend-program-/blob/main/INSA-CYBER_WEEKEND-main/Challenge/wireshark%20challenges/FL-challenge/fl-challenge5b.png)
