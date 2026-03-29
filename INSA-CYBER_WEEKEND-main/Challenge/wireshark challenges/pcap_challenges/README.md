@@ -1,6 +1,59 @@
 📡 Wireshark CTF Writeup — Network Forensics Challenges
 
-🛠 Tools Used
+ What is Wireshark?
+
+Wireshark is a network protocol analyzer — a tool used to capture and inspect data traveling across a network in real time or from saved files.
+
+1.  Capture network traffic
+
+It records packets (small units of data) sent between devices.
+
+Example:
+
+your browser → website
+your PC → router
+your system → DNS server
+2. Analyze packets
+
+Each packet contains:
+
+source IP
+destination IP
+protocol (HTTP, DNS, TCP, etc.)
+actual data (payload)
+
+Wireshark breaks all of this down for you.
+
+3. Filter specific traffic
+
+You can focus on exactly what you want:
+
+http → web traffic
+dns → domain queries
+tcp → connections
+icmp → ping packets
+
+-This is critical in CTFs and real investigations.
+
+4. Reconstruct conversations
+
+Using features like:
+
+Follow HTTP Stream
+Follow TCP Stream
+
+-It rebuilds full communication from many small packets.
+
+5.  Detect problems & attacks
+
+Wireshark helps identify:
+
+slow networks
+packet loss
+suspicious traffic
+hacking attempts
+
+## tools Used
 
 Wireshark
 
