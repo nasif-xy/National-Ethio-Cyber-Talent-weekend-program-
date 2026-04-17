@@ -2,7 +2,7 @@
 
 Network-related cyber attacks target different parts of a network (often mapped to OSI layers). 
 
-🔥 Common Network Cyber Attacks
+ Common Network Cyber Attacks
 
 🧨 1. DoS / DDoS (Denial of Service)
 Floods a server/network with traffic
